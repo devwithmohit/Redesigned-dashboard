@@ -29,7 +29,7 @@ body,
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  width: 100vw;
+  width: 100%;
   background: var(--bg-main);
 }
 
@@ -64,7 +64,6 @@ body,
   position: relative;
   z-index: 10;
   overflow: hidden;
-  
 }
 .AppFooter a {
   color: var(--primary) !important;
@@ -195,7 +194,7 @@ body,
   gap: 32px;
   margin-top: 16px;
   min-height: 0;
-  height: 100%;
+  height: auto;
 }
 .dashboard-chart-card,
 .dashboard-table-card {
@@ -206,7 +205,7 @@ body,
   padding: 32px 24px;
   min-width: 0;
   min-height: 0;
-  height: 100%;
+  height: auto;
   display: flex;
   flex-direction: column;
 }
@@ -256,30 +255,6 @@ body,
   font-size: 1rem;
 }
 .inventory-table-card .ant-table-tbody > tr > td {
-  font-size: 1rem;
-  color: #444;
-}
-
-/* Orders Table */
-.orders-table-card {
-  padding: 32px 0 0 0;
-}
-.orders-table-card .ant-card {
-  border-radius: 16px;
-  box-shadow: 0 4px 24px rgba(22, 119, 255, 0.07);
-  background: var(--bg-card);
-}
-.orders-table-card .ant-table {
-  background: transparent;
-  border-radius: 12px;
-}
-.orders-table-card .ant-table-thead > tr > th {
-  background: #f5f6fa;
-  color: #222;
-  font-weight: 700;
-  font-size: 1rem;
-}
-.orders-table-card .ant-table-tbody > tr > td {
   font-size: 1rem;
   color: #444;
 }
